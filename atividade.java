@@ -87,7 +87,6 @@ public class atividade {
         inverter(v, 0, tam - 1);
     }
 
-    //tempo de prova: 2horas
     public static void main(String[] args) {
 
         int[] a = {1, 2, 3, 4};
