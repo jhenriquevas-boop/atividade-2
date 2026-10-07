@@ -1,5 +1,5 @@
 public class atividade {
-
+//funcao auxiliar//
     public static boolean existe(int[] v, int tam, int valor) {
         for (int i = 0; i < tam; i++) {
             if (v[i] == valor) {
@@ -9,6 +9,7 @@ public class atividade {
         return false;
     }
 
+    //A
     public static int uniao(int[] a, int tamA, int[] b, int tamB, int[] u) {
         int tamU = 0;
 
@@ -29,6 +30,7 @@ public class atividade {
         return tamU;
     }
 
+    //B
     public static void ordenar(int[] v, int n) {
         for (int i = 1; i < n; i++) {
             int atual = v[i];
@@ -43,6 +45,7 @@ public class atividade {
         }
     }
 
+    //C
     public static int gerarVetorSemRepeticao(int[] v, int tamV, int[] vsr) {
         int tamVSR = 0;
 
@@ -56,6 +59,7 @@ public class atividade {
         return tamVSR;
     }
 
+    //funcao auxiliar
     public static void inverter(int[] v, int inicio, int fim) {
         while (inicio < fim) {
             int aux = v[inicio];
@@ -66,7 +70,7 @@ public class atividade {
             fim--;
         }
     }
-
+//D
     public static void rotacionar(int[] v, int tam, int k) {
         if (tam == 0) {
             return;
@@ -83,6 +87,7 @@ public class atividade {
         inverter(v, 0, tam - 1);
     }
 
+    //tempo de prova: 2horas
     public static void main(String[] args) {
 
         int[] a = {1, 2, 3, 4};
@@ -135,7 +140,7 @@ public class atividade {
 
             rotacionar(v, tam, k);
 
-            System.out.println("\n\nd) exemplo 1:");
+            System.out.println("\n\nd) exemplo 1");
             for (int i = 0; i < tam; i++) {
                 System.out.print(v[i] + " ");
             }
@@ -148,7 +153,7 @@ public class atividade {
 
             rotacionar(v, tam, k);
 
-            System.out.println("\nd) exemplo 2:");
+            System.out.println("\nd) exemplo 2");
             for (int i = 0; i < tam; i++) {
                 System.out.print(v[i] + " ");
             }
